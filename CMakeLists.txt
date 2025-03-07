@@ -24,4 +24,4 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 add_library(${PROJECT_NAME} ioapi.c unzip.c zip.c)
 
 target_link_libraries(${PROJECT_NAME} ${ZLIB_LIBRARIES})
-
+target_include_directories(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR})
